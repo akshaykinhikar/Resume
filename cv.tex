@@ -1,0 +1,258 @@
+%-------------------------
+% Resume in Latex
+% Author : Akshay Kinhikar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\usepackage{fontawesome}
+
+% fixed width
+%\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+% custom color
+\definecolor{titleColor}{RGB}{158,101,58}
+\definecolor{titleIconColor}{RGB}{158,101,58}
+\definecolor{headerColor}{RGB}{17,137,158}
+
+
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{blue} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \color{headerColor} \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{headerColor} {\titlerule[1.3pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \color{titleColor}\textbf{\Huge Akshay Kinhikar} \\ \vspace{5pt}
+
+   \color{titleIconColor} \small \faMobile \hspace{2pt}  \textsf{+91 7841810519} \hspace{1pt} $|$
+    \color{titleIconColor} \hspace{1pt} \faEnvelope \hspace{2pt} \textsf{arkinhikar@gmail.com} \hspace{1pt} $|$ 
+%    \hspace{1pt} \faYoutube \hspace{2pt} \texttt{harshibar} \hspace{1pt} $|$
+    \color{titleIconColor} \hspace{1pt} \faMapMarker \hspace{2pt}\textsf{Pune, India}
+%    \\ \vspace{-3pt}
+\end{center}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{HIGHLIGHTS}
+ \resumeItemListStart        
+        \resumeItem{Experience in \textbf{Agile Methodology}}
+        \resumeItem{Experience in \textbf{Angular, JavaScript, Typescript and NodeJS}}
+        \resumeItem{Hands-on experience in \textbf{HTM5, CSS3, Bootstrap}}
+        \resumeItem{Experience in frameworks/ tools such as \textbf{Jasmine and Karma}}
+        \resumeItem{Good in \textbf{debugging and analyzing the code}}
+        \resumeItem{Tools: MS Visual Studio Code, GitHub, JIRA}
+      \resumeItemListEnd
+%\section{SUMMARY}
+% \resumeItemListStart
+
+%  \resumeItemListEnd
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cybage Software Pvt. Ltd}{Jun. 2017 -- Present}
+      {Sr. Software Developer}{Pune, IN}
+      \resumeItemListStart
+        \resumeItem{Implement the UI according to provided wire frames}
+        \resumeItem{Web performance optimization}
+         \resumeItem{Implement unit functions and write test cases.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Infosys Ltd}{Sep. 2016 -- Jun. 2017}
+      {Process Specialist}{Pune, IN}
+      \resumeItemListStart
+        \resumeItem{Participating in Analysis, Coding, Debugging, Unit Testing.}
+        \resumeItem{Communication with Client.}
+        \resumeItem{Attending various trainings technical as well as functional.}
+         \resumeItem{Actively Attending each meeting and sessions.}
+
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Sahaj Academy Edutech LLP}{Jul. 2014 -- Aug. 2016}
+      {Software Developer}{Mumbai, IN}
+      \resumeItemListStart
+        \resumeItem{Design and develop Responsive website}
+        \resumeItem{implemented functionality for user module for displaying products and cart
+management}
+        \resumeItem{Integrated payment gateway}
+        \resumeItem{Designed and implemented admin panel and diffenrent list views}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Banking Domain Application}{Jun. 2017 -- Present}
+      {Anguar8, RxJS, ES6, HTML, SCSS, NodeJS, MongoDB}{Pune, IN}
+      \resumeItemListStart
+	    \resumeItem{Understand new requirement and provide feedback/queries}            
+            \resumeItem{Working on creating reusable component and enhancing existing component to fit new requirement}
+            \resumeItem{Debugging application and enhancing performance of application}
+            \resumeItem{Implemented NgRX store for State Management thoughout application }      \resumeItemListEnd
+    \resumeSubheading
+      {Travel and Hospitality Management}{Sep. 2016 -- Jun. 2017}
+      {Anguar8, RxJS, ES6, HTML, SCSS, NodeJS, MongoDB}{Pune, IN}
+      \resumeItemListStart
+        \resumeItem{Implemented the UI according to provided wireframes}
+        \resumeItem{Engaged in Web performance optimization}
+        \resumeItem{Implemented unit functions and wrote test cases}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Landing Pages Generator Tool}{Jul. 2014 -- Aug. 2016}
+      {NodeJS, Anguar4, RxJS, ES6, HTML, SCSS, NodeJS, MongoDB}{Mumbai, IN}
+      \resumeItemListStart
+        \resumeItem{Participated and provided input in architecture design}
+        \resumeItem{Attended SEO sessions and structured URLs}
+        \resumeItem{Implemented Microservices}
+        \resumeItem{Implemented unit functions and wrote test cases}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shram Sadhana Bombey Trust's College Of Engineering, Jalgaon}{Aug. 2014 -- May 2018}
+      {Bachelor of Computer Engineering \textbf{64.40\%}}{North Maharashtra University, MH}
+     \resumeSubheading
+      {Government Polytechnic College, Amravati }{Aug. 2008 -- May 2014}
+      {Diploma in Information Technology \textbf{81.27\%}}{An Autonomous Institute, MH}
+     \resumeSubheading
+      {Loknayak Bapuji Aney Vidyalaya}{Mar. 2007 -- Mar. 2008}
+      {Secondary State Certificate \textbf{85.69\%}}{Nashik Secondary and Higher Secondary Board, MH}
+  \resumeSubHeadingListEnd
+
+
+%
+
+
+%-------------------------------------------
+\end{document}
